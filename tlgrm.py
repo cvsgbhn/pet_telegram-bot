@@ -1,7 +1,7 @@
 import requests
 import datetime
 
-token = 1048407622:AAFr56pmMdtZTlkXKJILafAB-_RGMmwx-PQ
+token = '1048407622:AAFr56pmMdtZTlkXKJILafAB-_RGMmwx-PQ'
 
 greet_bot = BotHandler(token)
 greetings = ('hello', 'hi', 'greetings', 'sup')
