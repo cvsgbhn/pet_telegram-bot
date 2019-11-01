@@ -1,8 +1,10 @@
+from boto.s3.connection import S3Connection
 import requests
 import datetime
 import os
 
-token = os.getenv("TOKEN")
+token = S3Connection(os.environ['TOKEN'])
+bot = telebot.TeleBot(token)
 
 class BotHandler:
 
