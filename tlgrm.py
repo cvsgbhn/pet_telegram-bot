@@ -1,10 +1,6 @@
 import requests
 import datetime
 
-greet_bot = BotHandler(token)
-greetings = ('hello', 'hi', 'greetings', 'sup')
-now = datetime.datetime.now()
-
 class BotHandler:
 
     def __init__(self, token):
@@ -33,6 +29,11 @@ class BotHandler:
             last_update = get_result[len(get_result)]
 
         return last_update
+
+greet_bot = BotHandler(token)
+greetings = ('hello', 'hi', 'greetings', 'sup')
+now = datetime.datetime.now()
+
 
 def main():
     new_offset = None
