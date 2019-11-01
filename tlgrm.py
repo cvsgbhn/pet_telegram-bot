@@ -1,13 +1,11 @@
 import requests
 import datetime
 
-token = '1048407622:AAFr56pmMdtZTlkXKJILafAB-_RGMmwx-PQ'
-
 greet_bot = BotHandler(token)
 greetings = ('hello', 'hi', 'greetings', 'sup')
 now = datetime.datetime.now()
 
-class BotHandler(token):
+class BotHandler:
 
     def __init__(self, token):
         self.token = token
