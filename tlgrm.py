@@ -1,5 +1,8 @@
 import requests
 import datetime
+import os
+
+token = os.getenv("TOKEN")
 
 class BotHandler:
 
